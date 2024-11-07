@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7/"
+     xml:base="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#mange -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#mange">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#animal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#vivant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#pollue -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#pollue"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#vit_dans -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#vit_dans">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#animal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#vegetal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#Temperature -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#Temperature">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#climat"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#acidite -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#acidite">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#climat"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#acidite_optimale -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#acidite_optimale">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#vivant"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#poids -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#poids"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#taille -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#taille"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#temperature_optimale -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#temperature_optimale">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#vivant"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#animal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#animal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#vivant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#carnivore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#carnivore">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#mammifere"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#ovipare"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#climat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#climat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#environnement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#environnement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#environnement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#non-vivant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#herbivore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#herbivore">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#mammifere"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#ovipare"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#intervention_humaine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#intervention_humaine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#non-vivant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#mammifere -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#mammifere">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#non-vivant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#non-vivant"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#ovipare -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#ovipare">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#peche -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#peche">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#intervention_humaine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#vegetal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#vegetal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#vivant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#vivant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-7#vivant"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
