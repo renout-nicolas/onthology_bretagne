@@ -32,6 +32,12 @@
     
 
 
+    <!-- http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#fait_fuir -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#fait_fuir"/>
+    
+
+
     <!-- http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#mange -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#mange">
@@ -85,6 +91,12 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#equipements"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#pollution"/>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#produit_surpeche -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#produit_surpeche"/>
     
 
 
@@ -209,6 +221,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#pH_eau -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#pH_eau">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#environnement"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#parasitisme -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#parasitisme">
@@ -257,6 +277,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#temperature_eau -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#temperature_eau">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#environnement"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#topologie -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#topologie">
@@ -269,14 +297,6 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#usine">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#equipements"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#caracteristiques_de_l&apos;eau -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#caracteristiques_de_l&apos;eau">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#environnement"/>
     </owl:Class>
     
 
@@ -298,10 +318,112 @@
     
 
 
+    <!-- http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#bar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#bar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#poisson"/>
+        <untitled-ontology-10:mange rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#calmar"/>
+        <untitled-ontology-10:mange rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#crevette"/>
+        <untitled-ontology-10:mange rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#sprat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#calmar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#calmar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#cephalopode"/>
+        <untitled-ontology-10:mange rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#crevette"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#chalutier -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#chalutier">
+        <rdf:type rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#equipements"/>
+        <untitled-ontology-10:produit_pollution rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#pollution_sonore"/>
+        <untitled-ontology-10:produit_surpeche rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#surpeche_crevette"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#crabe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#crabe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#crustace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#crevette -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#crevette">
+        <rdf:type rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#crustace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#dauphin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#dauphin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#mammifere"/>
+        <untitled-ontology-10:mange rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#bar"/>
+        <untitled-ontology-10:mange rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#calmar"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#dorade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#dorade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#poisson"/>
+        <untitled-ontology-10:mange rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#crevette"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#evacuation_eaux_usees -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#evacuation_eaux_usees">
+        <rdf:type rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#equipements"/>
+        <untitled-ontology-10:produit_pollution rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#pollution_chimique"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#huitre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#huitre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#crustace"/>
+        <untitled-ontology-10:mange rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#plancton"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#palourde -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#palourde">
+        <rdf:type rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#crustace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#plancton -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#plancton">
+        <rdf:type rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#algue"/>
+        <untitled-ontology-10:mange rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#plancton"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#pollution_chimique -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#pollution_chimique">
         <rdf:type rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#pollution"/>
+        <untitled-ontology-10:menace rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#plancton"/>
+        <untitled-ontology-10:menace rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#varech"/>
     </owl:NamedIndividual>
     
 
@@ -310,6 +432,25 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#pollution_sonore">
         <rdf:type rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#pollution"/>
+        <untitled-ontology-10:fait_fuir rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#dauphin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#sprat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#sprat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#poisson"/>
+        <untitled-ontology-10:mange rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#plancton"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#surpeche_crevette -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#surpeche_crevette">
+        <rdf:type rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#surpeche"/>
+        <untitled-ontology-10:menace rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#crevette"/>
     </owl:NamedIndividual>
     
 
@@ -319,6 +460,14 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#total">
         <rdf:type rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#usine"/>
         <untitled-ontology-10:produit_pollution rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#pollution_chimique"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#varech -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#varech">
+        <rdf:type rdf:resource="http://www.semanticweb.org/naincapable/ontologies/2024/9/untitled-ontology-10#algue"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
