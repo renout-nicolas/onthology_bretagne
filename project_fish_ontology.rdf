@@ -1,0 +1,658 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13/"
+     xml:base="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-13="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#hasPredator -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#hasPredator">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#hasPrey"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Fish"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Fish"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#hasPrey -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#hasPrey"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#livesIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#livesIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Fish"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Habitat"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#averageSize -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#averageSize">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#averageWeight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#averageWeight">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#lifespan -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#lifespan">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Bony -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Bony">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Fish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Cartilaginous -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Cartilaginous">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Fish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Clupeidae -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Clupeidae">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Bony"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Cods -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Cods">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Bony"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Dolphins -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Dolphins">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Bony"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Eels -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Eels">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Bony"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Fish -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Fish"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Flatfishs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Flatfishs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Bony"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Habitat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Habitat"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Mackerels -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Mackerels">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Bony"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Perchs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Perchs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Bony"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Pinnipeds -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Pinnipeds">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Bony"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Pipefishs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Pipefishs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Bony"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Scorpionfishs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Scorpionfishs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Bony"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Sea_bass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Sea_bass">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Bony"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Seahorses -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Seahorses">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Bony"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Season -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Season"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Sharks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Sharks">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Cartilaginous"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Wrasses -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Wrasses">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Bony"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#AtlanticCod -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#AtlanticCod">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Cods"/>
+        <untitled-ontology-13:hasPredator rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#BlueShark"/>
+        <untitled-ontology-13:hasPrey rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#EuropeanPlaice"/>
+        <untitled-ontology-13:hasPrey rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Pilchard"/>
+        <untitled-ontology-13:livesIn rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#IroiseSea"/>
+        <untitled-ontology-13:averageSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100</untitled-ontology-13:averageSize>
+        <untitled-ontology-13:averageWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12</untitled-ontology-13:averageWeight>
+        <untitled-ontology-13:lifespan rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</untitled-ontology-13:lifespan>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#AtlanticHerring -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#AtlanticHerring">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Clupeidae"/>
+        <untitled-ontology-13:hasPredator rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#BottlenoseDolphin"/>
+        <untitled-ontology-13:livesIn rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#BayOfSaintBrieuc"/>
+        <untitled-ontology-13:averageSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</untitled-ontology-13:averageSize>
+        <untitled-ontology-13:averageWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.3</untitled-ontology-13:averageWeight>
+        <untitled-ontology-13:lifespan rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</untitled-ontology-13:lifespan>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#AtlanticMackerel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#AtlanticMackerel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Mackerels"/>
+        <untitled-ontology-13:hasPredator rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#BottlenoseDolphin"/>
+        <untitled-ontology-13:hasPrey rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Sprat"/>
+        <untitled-ontology-13:hasPrey rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Whiting"/>
+        <untitled-ontology-13:livesIn rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#GulfOfMorbihan"/>
+        <untitled-ontology-13:averageSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">35</untitled-ontology-13:averageSize>
+        <untitled-ontology-13:averageWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</untitled-ontology-13:averageWeight>
+        <untitled-ontology-13:lifespan rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</untitled-ontology-13:lifespan>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#BallanWrasse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#BallanWrasse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Wrasses"/>
+        <untitled-ontology-13:livesIn rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#RockyReef"/>
+        <untitled-ontology-13:averageSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">45</untitled-ontology-13:averageSize>
+        <untitled-ontology-13:averageWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</untitled-ontology-13:averageWeight>
+        <untitled-ontology-13:lifespan rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</untitled-ontology-13:lifespan>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#BayOfBiscay -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#BayOfBiscay">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Habitat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#BayOfSaintBrieuc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#BayOfSaintBrieuc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Habitat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#BlueShark -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#BlueShark">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Sharks"/>
+        <untitled-ontology-13:hasPredator rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#PorbeagleShark"/>
+        <untitled-ontology-13:hasPrey rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#AtlanticCod"/>
+        <untitled-ontology-13:hasPrey rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#BluefinTuna"/>
+        <untitled-ontology-13:livesIn rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#CoastalZone"/>
+        <untitled-ontology-13:averageSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">250</untitled-ontology-13:averageSize>
+        <untitled-ontology-13:averageWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">200</untitled-ontology-13:averageWeight>
+        <untitled-ontology-13:lifespan rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</untitled-ontology-13:lifespan>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#BluefinTuna -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#BluefinTuna">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Mackerels"/>
+        <untitled-ontology-13:hasPredator rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#BlueShark"/>
+        <untitled-ontology-13:hasPrey rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#AtlanticHerring"/>
+        <untitled-ontology-13:livesIn rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#IroiseSea"/>
+        <untitled-ontology-13:averageSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">200</untitled-ontology-13:averageSize>
+        <untitled-ontology-13:averageWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">250</untitled-ontology-13:averageWeight>
+        <untitled-ontology-13:lifespan rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</untitled-ontology-13:lifespan>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Bonito -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Bonito">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Mackerels"/>
+        <untitled-ontology-13:hasPredator rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#AtlanticCod"/>
+        <untitled-ontology-13:hasPredator rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#BluefinTuna"/>
+        <untitled-ontology-13:hasPrey rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#AtlanticHerring"/>
+        <untitled-ontology-13:livesIn rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#BayOfBiscay"/>
+        <untitled-ontology-13:averageSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">60</untitled-ontology-13:averageSize>
+        <untitled-ontology-13:averageWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-13:averageWeight>
+        <untitled-ontology-13:lifespan rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</untitled-ontology-13:lifespan>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#BottlenoseDolphin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#BottlenoseDolphin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Dolphins"/>
+        <untitled-ontology-13:hasPrey rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#AtlanticHerring"/>
+        <untitled-ontology-13:hasPrey rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#AtlanticMackerel"/>
+        <untitled-ontology-13:hasPrey rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Pollock"/>
+        <untitled-ontology-13:livesIn rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#CoastalZone"/>
+        <untitled-ontology-13:averageSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">250</untitled-ontology-13:averageSize>
+        <untitled-ontology-13:averageWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">300</untitled-ontology-13:averageWeight>
+        <untitled-ontology-13:lifespan rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</untitled-ontology-13:lifespan>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#CoastalZone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#CoastalZone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Habitat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#CommonScorpionfish -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#CommonScorpionfish">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Scorpionfishs"/>
+        <untitled-ontology-13:hasPredator rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#EuropeanSeaBass"/>
+        <untitled-ontology-13:livesIn rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#RockyReef"/>
+        <untitled-ontology-13:averageSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</untitled-ontology-13:averageSize>
+        <untitled-ontology-13:averageWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</untitled-ontology-13:averageWeight>
+        <untitled-ontology-13:lifespan rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</untitled-ontology-13:lifespan>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#CommonSole -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#CommonSole">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Flatfishs"/>
+        <untitled-ontology-13:hasPredator rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#AtlanticMackerel"/>
+        <untitled-ontology-13:livesIn rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Mudflat"/>
+        <untitled-ontology-13:averageSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</untitled-ontology-13:averageSize>
+        <untitled-ontology-13:averageWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.6</untitled-ontology-13:averageWeight>
+        <untitled-ontology-13:lifespan rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</untitled-ontology-13:lifespan>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#CorkwingWrasse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#CorkwingWrasse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Wrasses"/>
+        <untitled-ontology-13:livesIn rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#CoastalZone"/>
+        <untitled-ontology-13:averageSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15</untitled-ontology-13:averageSize>
+        <untitled-ontology-13:averageWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</untitled-ontology-13:averageWeight>
+        <untitled-ontology-13:lifespan rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</untitled-ontology-13:lifespan>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#EuropeanPlaice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#EuropeanPlaice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Flatfishs"/>
+        <untitled-ontology-13:hasPredator rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#AtlanticCod"/>
+        <untitled-ontology-13:livesIn rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Mudflat"/>
+        <untitled-ontology-13:averageSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</untitled-ontology-13:averageSize>
+        <untitled-ontology-13:averageWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.6</untitled-ontology-13:averageWeight>
+        <untitled-ontology-13:lifespan rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</untitled-ontology-13:lifespan>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#EuropeanSeaBass -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#EuropeanSeaBass">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Sea_bass"/>
+        <untitled-ontology-13:hasPredator rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#BlueShark"/>
+        <untitled-ontology-13:hasPrey rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#GreaterPipefish"/>
+        <untitled-ontology-13:hasPrey rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Pilchard"/>
+        <untitled-ontology-13:livesIn rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#CoastalZone"/>
+        <untitled-ontology-13:averageWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</untitled-ontology-13:averageWeight>
+        <untitled-ontology-13:averageWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50</untitled-ontology-13:averageWeight>
+        <untitled-ontology-13:lifespan rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</untitled-ontology-13:lifespan>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#GreaterPipefish -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#GreaterPipefish">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Pipefishs"/>
+        <untitled-ontology-13:hasPredator rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#BallanWrasse"/>
+        <untitled-ontology-13:livesIn rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#CoastalZone"/>
+        <untitled-ontology-13:livesIn rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#GulfOfMorbihan"/>
+        <untitled-ontology-13:averageSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</untitled-ontology-13:averageSize>
+        <untitled-ontology-13:averageWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.06</untitled-ontology-13:averageWeight>
+        <untitled-ontology-13:lifespan rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</untitled-ontology-13:lifespan>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#GreySeal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#GreySeal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Pinnipeds"/>
+        <untitled-ontology-13:hasPrey rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#AtlanticHerring"/>
+        <untitled-ontology-13:hasPrey rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#AtlanticMackerel"/>
+        <untitled-ontology-13:hasPrey rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#CommonSole"/>
+        <untitled-ontology-13:livesIn rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#CoastalZone"/>
+        <untitled-ontology-13:averageSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-13:averageSize>
+        <untitled-ontology-13:averageWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">250</untitled-ontology-13:averageWeight>
+        <untitled-ontology-13:lifespan rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</untitled-ontology-13:lifespan>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#GulfOfMorbihan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#GulfOfMorbihan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Habitat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#IroiseSea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#IroiseSea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Habitat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#LongSpinedSeaScorpion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#LongSpinedSeaScorpion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Scorpionfishs"/>
+        <untitled-ontology-13:livesIn rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#CoastalZone"/>
+        <untitled-ontology-13:averageSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20</untitled-ontology-13:averageSize>
+        <untitled-ontology-13:averageWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2</untitled-ontology-13:averageWeight>
+        <untitled-ontology-13:lifespan rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</untitled-ontology-13:lifespan>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Mudflat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Mudflat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Habitat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#OpenOcean -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#OpenOcean">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Habitat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Pilchard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Pilchard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Clupeidae"/>
+        <untitled-ontology-13:hasPredator rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#EuropeanSeaBass"/>
+        <untitled-ontology-13:livesIn rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#IroiseSea"/>
+        <untitled-ontology-13:averageSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20</untitled-ontology-13:averageSize>
+        <untitled-ontology-13:averageWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</untitled-ontology-13:averageWeight>
+        <untitled-ontology-13:lifespan rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</untitled-ontology-13:lifespan>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Pollock -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Pollock">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Cods"/>
+        <untitled-ontology-13:hasPredator rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#BottlenoseDolphin"/>
+        <untitled-ontology-13:hasPrey rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Whiting"/>
+        <untitled-ontology-13:livesIn rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#CoastalZone"/>
+        <untitled-ontology-13:averageSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">75</untitled-ontology-13:averageSize>
+        <untitled-ontology-13:averageWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</untitled-ontology-13:averageWeight>
+        <untitled-ontology-13:lifespan rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</untitled-ontology-13:lifespan>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#PorbeagleShark -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#PorbeagleShark">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Sharks"/>
+        <untitled-ontology-13:hasPredator rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#BlueShark"/>
+        <untitled-ontology-13:hasPrey rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#BlueShark"/>
+        <untitled-ontology-13:hasPrey rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Turbot"/>
+        <untitled-ontology-13:livesIn rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#IroiseSea"/>
+        <untitled-ontology-13:averageSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">250</untitled-ontology-13:averageSize>
+        <untitled-ontology-13:averageWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">130</untitled-ontology-13:averageWeight>
+        <untitled-ontology-13:lifespan rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</untitled-ontology-13:lifespan>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#RockyReef -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#RockyReef">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Habitat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#SeagrassBeds -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#SeagrassBeds">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Habitat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#ShortSnoutedSeahorse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#ShortSnoutedSeahorse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Seahorses"/>
+        <untitled-ontology-13:hasPredator rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#AtlanticMackerel"/>
+        <untitled-ontology-13:livesIn rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#SeagrassBeds"/>
+        <untitled-ontology-13:averageSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12</untitled-ontology-13:averageSize>
+        <untitled-ontology-13:averageWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.02</untitled-ontology-13:averageWeight>
+        <untitled-ontology-13:lifespan rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</untitled-ontology-13:lifespan>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#SmallSpottedCatshark -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#SmallSpottedCatshark">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Sharks"/>
+        <untitled-ontology-13:hasPredator rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#PorbeagleShark"/>
+        <untitled-ontology-13:livesIn rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#RockyReef"/>
+        <untitled-ontology-13:averageSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">60</untitled-ontology-13:averageSize>
+        <untitled-ontology-13:averageWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</untitled-ontology-13:averageWeight>
+        <untitled-ontology-13:lifespan rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</untitled-ontology-13:lifespan>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Sprat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Sprat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Clupeidae"/>
+        <untitled-ontology-13:hasPredator rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#AtlanticMackerel"/>
+        <untitled-ontology-13:hasPredator rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#BallanWrasse"/>
+        <untitled-ontology-13:hasPredator rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Pollock"/>
+        <untitled-ontology-13:livesIn rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#CoastalZone"/>
+        <untitled-ontology-13:averageSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12</untitled-ontology-13:averageSize>
+        <untitled-ontology-13:averageWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.02</untitled-ontology-13:averageWeight>
+        <untitled-ontology-13:lifespan rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</untitled-ontology-13:lifespan>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Turbot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Turbot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Flatfishs"/>
+        <untitled-ontology-13:hasPredator rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#PorbeagleShark"/>
+        <untitled-ontology-13:livesIn rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#IroiseSea"/>
+        <untitled-ontology-13:averageSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">80</untitled-ontology-13:averageSize>
+        <untitled-ontology-13:averageWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</untitled-ontology-13:averageWeight>
+        <untitled-ontology-13:lifespan rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</untitled-ontology-13:lifespan>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Whiting -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Whiting">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Cods"/>
+        <untitled-ontology-13:hasPredator rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#AtlanticMackerel"/>
+        <untitled-ontology-13:hasPrey rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#Sprat"/>
+        <untitled-ontology-13:livesIn rdf:resource="http://www.semanticweb.org/lid/ontologies/2024/10/untitled-ontology-13#CoastalZone"/>
+        <untitled-ontology-13:averageSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</untitled-ontology-13:averageSize>
+        <untitled-ontology-13:averageWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</untitled-ontology-13:averageWeight>
+        <untitled-ontology-13:lifespan rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7</untitled-ontology-13:lifespan>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
